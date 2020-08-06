@@ -1,17 +1,18 @@
 <idea-plugin>
   <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <name>Twee2 Language</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="contact@jessevdk.be" url="https://github.com/VandenkerckhoveJesse/twee2-lang">Jesse Vandenkerckhove</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      This plugins add custom language support or the Twee2 language.
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      <ul>
+        <li>First version</li>
+        <li>Project setup has been done</li>
+      </ul>
     ]]>
   </change-notes>
 
@@ -25,7 +26,8 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
+    <fileType name="Twee2 File" implementationClass="twee2lang.Twee2FileType"
+      fieldName="INSTANCE" language="Twee2" extensions="twee2"/>
   </extensions>
 
   <actions>
