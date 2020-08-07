@@ -28,6 +28,7 @@
   <extensions defaultExtensionNs="com.intellij">
     <fileType name="Twee2 File" implementationClass="twee2lang.Twee2FileType"
       fieldName="INSTANCE" language="Twee2" extensions="twee2"/>
+    <fileTypeFactory implementation="twee2lang.Twee2FileTypeFactory"/>
   </extensions>
 
   <actions>

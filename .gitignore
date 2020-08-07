@@ -8,6 +8,8 @@ doc/
 .gradle/
 /bin/
 target/
+gen/
+
  
 # OS Files #
 .DS_Store

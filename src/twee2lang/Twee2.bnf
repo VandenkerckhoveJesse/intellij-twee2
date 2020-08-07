@@ -1,0 +1,22 @@
+{
+    parserClass="twee2lang.parser.Twee2Parser"
+
+    extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+    psiClassPrefix="Twee2"
+    psiImplClassSuffix="Impl"
+    psiPackage="twee2lang.psi"
+    psiImplPackage="twee2lang.psi.impl"
+
+    elementTypeHolderClass="twee2lang.psi.Twee2Types"
+    elementTypeClass="twee2lang.psi.Twee2ElementType"
+    tokenTypeClass="twee2lang.psi.Twee2TokenType"
+
+    psiImplUtilClass="twee2lang.psi.impl.Twee2PsiImplUtil"
+}
+
+twee2File ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPERATOR VALUE?) | KEY
